@@ -1,0 +1,26 @@
+<html>
+<body>
+  <div>
+    <span>Page</span>
+    <div id="app">
+  </div>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/javascript" src="./globalConstants.js"> </script>
+  <script type="text/javascript">
+    "use strict";
+    var React = {};
+  </script>
+  <script type="text/javascript" src="./render.js"> </script>
+  <script type="text/javascript" src="./element.js"> </script>
+  <script type="text/babel">
+    const element = (
+      <div id="container">
+        <input value="foo" type="text" />
+        <a href="/bar">bar</a>
+        <span onClick={e => alert("Hi")}>click me</span>
+      </div>
+    );
+    React.render(element, document.querySelector("#app"));
+  </script>
+</body>
+</html>
